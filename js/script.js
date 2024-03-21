@@ -63,10 +63,12 @@ console.log(teamMembers);
     for( let i = 0; i <= teamMembers.length; i++){
         let singleBox = document.createElement ("div");
         singleBox.innerHTML = `
-        ${teamMembers[i].fullname} <br> ${teamMembers[i].position}
         <img class="images" src="img/${teamMembers[i].picture}">
+        ${teamMembers[i].fullname} <br> ${teamMembers[i].position}
         `;
         singleBox.classList.add("single-box");
         boxContainer.appendChild(singleBox);
+        
+        
      }
 
