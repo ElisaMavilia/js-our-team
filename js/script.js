@@ -72,11 +72,9 @@ console.log(teamMembers);
      }
 
     let textUp = document.getElementById("text-elements");
-
-
     textUp.innerHTML = `
     <h3 class="text-center pt-3 pb-3 text-uppercase ">Our Team</h3>
-    <p class="text-center pb-4 fs-5 ps-5">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor<br>
+    <p class="text-center pb-4 fs-6 ps-5">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor<br>
     Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor</p>`;
     
    
