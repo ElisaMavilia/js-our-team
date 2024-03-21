@@ -57,3 +57,16 @@ let teamMembers = [
 ]
 
 console.log(teamMembers);
+
+
+    let boxContainer = document.getElementById("box-container");
+    for( let i = 1; i <= teamMembers.length; i++){
+        let singleBox = document.createElement ("div");
+        singleBox.innerHTML = `
+        Name: ${teamMembers[i].name} Position: ${teamMembers[i].position}
+        <img src="img/${teamMembers[i].picture}">
+        `;
+        singleBox.classList.add(".single-box");
+        boxContainer.appendChild(singleBox);
+     }
+
