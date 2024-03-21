@@ -58,17 +58,16 @@ let teamMembers = [
 
 console.log(teamMembers);
 
-
     let boxContainer = document.getElementById("box-container");
     for( let i = 0; i <= teamMembers.length; i++){
         let singleBox = document.createElement ("div");
         singleBox.innerHTML = `
-        <img class="images" src="img/${teamMembers[i].picture}">
-        ${teamMembers[i].fullname} <br> ${teamMembers[i].position}
+        <img class="images card-img-top" src="img/${teamMembers[i].picture}">
+        <div class="card-body">
+        <h5 class="card-title text-center">${teamMembers[i].fullname}<br>${teamMembers[i].position}</h5>
+        </div>
         `;
-        singleBox.classList.add("single-box");
+        singleBox.classList.add("single-box", "card");
         boxContainer.appendChild(singleBox);
-        
-        
      }
 
