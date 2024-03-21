@@ -59,15 +59,27 @@ let teamMembers = [
 console.log(teamMembers);
 
     let boxContainer = document.getElementById("box-container");
-    for( let i = 0; i <= teamMembers.length; i++){
+    for( let i = 0; i < teamMembers.length; i++){
         let singleBox = document.createElement ("div");
         singleBox.innerHTML = `
         <img class="images card-img-top" src="img/${teamMembers[i].picture}">
         <div class="card-body">
-        <h5 class="card-title text-center">${teamMembers[i].fullname}<br>${teamMembers[i].position}</h5>
+        <h5 class="card-title text-center pt-2"><strong>${teamMembers[i].fullname}</strong><br>${teamMembers[i].position}</h5>
         </div>
         `;
         singleBox.classList.add("single-box", "card");
         boxContainer.appendChild(singleBox);
      }
+
+    let textUp = document.getElementById("text-elements");
+
+
+    textUp.innerHTML = `
+    <h3 class="text-center pt-3 pb-3 text-uppercase ">Our Team</h3>
+    <p class="text-center pb-4 fs-5 ps-5">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor<br>
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor</p>`;
+    
+   
+
+
 
